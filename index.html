@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-
-  </body>
+<head>
+  <meta charset="utf-8">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <title>Pig Latin Translator</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Igpay Atlinlay!!!</h1>
+    <form>
+      <label for="stringInput">Give me a sentence, and I'll translate it to Pig Latin:</label>
+      <input type="text" name="stringInput">
+      <button class="btn btn-dark" type="submit" name="button">Anslatetray erehay</button>
+    </form>
+    <div class="result">
+      <p>Your original sentence:</p>
+      <p id="original"></p>
+      <p>Your translated sentence:</p>
+      <p id="pigLatinTranslation"></p>
+    </div>
+  </div>
+</body>
 </html>
