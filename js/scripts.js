@@ -19,11 +19,17 @@ function findFirstVowel(word) {
 
 function addVowelSuffix(word) {
   var newWord = word + 'way';
+  if (word.charAt(0).toLowerCase() === 'y') {
+    return translateConsonant(word);
+  }
   return newWord.toLowerCase();
 }
 
 function translateConsonant(word) {
   var vowelLocation = findFirstVowel(word);
+  if (word.includes("qu") || word.charAt(0).toLowerCase() === 'y') {
+    vowelLocation += 1;
+  }
   var startOfWord = word.slice(0, (vowelLocation));
   var endOfWord = word.slice(vowelLocation);
   var newWord = endOfWord + startOfWord + "ay";
